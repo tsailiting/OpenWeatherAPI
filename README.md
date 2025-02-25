@@ -22,7 +22,8 @@ Using `pytest` to Execute API Testing for `OpenWeather API 2.5 + Geocoding API`
 ```bash
 pytest -s
 ```
-
+## Result
+![Output](docs/output.png)
 #### Current Weather Data
 https://openweathermap.org/current
 ```
@@ -38,7 +39,7 @@ Free:
 * JSON, XML, and HTML formats
 * Included in both free and paid subscriptions
 
-##### Geocoding API
+#### Geocoding API
 https://openweathermap.org/api/geocoding-api
 ```
 https://api.openweathermap.org/geo/1.0/direct?q={city}&limit=1&appid={API_KEY}
