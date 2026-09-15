@@ -1,0 +1,64 @@
+OpenWeather API 測試項目
+GitHub: tsailiting/OpenNetAPI
+項目介紹
+使用 pytest 測試 OpenWeather API 2.5 和 Geocoding API
+
+輸入城市名稱，獲取並顯示該地區的天氣資訊
+
+測試案例包括：
+
+查詢 Tokyo 天氣
+
+查詢 New York 天氣
+
+查詢無效城市
+
+API 功能
+Current Weather Data API
+
+獲取當前天氣數據
+端點：
+
+Copy
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}  
+支持 JSON、XML、HTML 格式
+
+Geocoding API
+
+將城市名稱轉換為經緯度
+
+端點：
+
+Copy
+https://api.openweathermap.org/geo/1.0/direct?q={city}&limit=1&appid={API_KEY}  
+測試結果
+成功案例：
+
+HTTP 200：成功獲取天氣數據
+
+失敗案例：
+
+HTTP 400：無效城市名稱
+bash
+Copy
+pytest -s  
+測試結果
+
+免費方案限制
+每分鐘 60 次請求
+
+每月 1,000,000 次請求
+
+技術亮點
+自動化 API 測試
+
+數據來源多樣化（衛星、雷達、氣象站等）
+
+支持多種數據格式
+投影片設計建議：
+
+使用簡潔的藍色調背景，搭配天氣相關圖標（如雲、太陽等）。
+
+圖片部分可以直接嵌入 docs/output.png 的測試結果截圖。
+
+使用清晰的標題和分段，確保內容易讀。
