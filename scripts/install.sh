@@ -26,6 +26,8 @@ poetry --version
 
 log "Installing poetry shell"
 # ref: https://github.com/python-poetry/poetry-plugin-shell
+poetry config keyring.enabled false
+
 poetry self add poetry-plugin-shell
 
 log "Installing project dependencies with Poetry..."
